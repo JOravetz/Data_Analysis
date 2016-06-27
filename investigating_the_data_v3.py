@@ -68,3 +68,8 @@ for enrollment in enrollments:
 
 print num_problem_students
 
+udacity_test_accounts = set()
+for enrollment in enrollments :
+   if enrollment ['is_udacity'] == "True" : 
+      udacity_test_accounts.add(enrollment['account_key'])
+print len ( udacity_test_accounts )
